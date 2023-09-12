@@ -88,6 +88,10 @@
 #define FINSH_USING_DESCRIPTION
 // <integer name="FINSH_THREAD_STACK_SIZE" description="The stack size for finsh thread" default="4096" />
 #define FINSH_THREAD_STACK_SIZE	4096
+#define FINSH_CMD_SIZE 80
+#define FINSH_USING_MSH
+#define FINSH_USING_MSH_DEFAULT
+#define FINSH_ARG_MAX 10
 // </section>
 
 // <section name="LIBC" description="C Runtime library setting" default="always" >
@@ -156,47 +160,47 @@
 // </section>
 
 // <section name="RT_USING_LWIP" description="lwip, a lightweight TCP/IP protocol stack" default="true" >
-#define RT_USING_LWIP
+//#define RT_USING_LWIP
 // <bool name="RT_LWIP_ICMP" description="Enable ICMP protocol" default="true" />
-#define RT_LWIP_ICMP
+//#define RT_LWIP_ICMP
 // <bool name="RT_LWIP_IGMP" description="Enable IGMP protocol" default="false" />
 // #define RT_LWIP_IGMP
 // <bool name="RT_LWIP_UDP" description="Enable UDP protocol" default="true" />
-#define RT_LWIP_UDP
+//#define RT_LWIP_UDP
 // <bool name="RT_LWIP_TCP" description="Enable TCP protocol" default="true" />
-#define RT_LWIP_TCP
+//#define RT_LWIP_TCP
 // <bool name="RT_LWIP_DNS" description="Enable DNS protocol" default="true" />
-#define RT_LWIP_DNS
+//#define RT_LWIP_DNS
 // <integer name="RT_LWIP_PBUF_NUM" description="Maximal number of buffers in the pbuf pool" default="4" />
-#define RT_LWIP_PBUF_NUM	4
+//#define RT_LWIP_PBUF_NUM	4
 // <integer name="RT_LWIP_TCP_PCB_NUM" description="Maximal number of simultaneously active TCP connections" default="5" />
-#define RT_LWIP_TCP_PCB_NUM	3
+//#define RT_LWIP_TCP_PCB_NUM	3
 // <integer name="RT_LWIP_TCP_SND_BUF" description="TCP sender buffer size" default="8192" />
-#define RT_LWIP_TCP_SND_BUF	(2 * TCP_MSS)
+//#define RT_LWIP_TCP_SND_BUF	(2 * TCP_MSS)
 // <integer name="RT_LWIP_TCP_WND" description="TCP receive window" default="8192" />
-#define RT_LWIP_TCP_WND	2048
+//#define RT_LWIP_TCP_WND	2048
 // <bool name="RT_LWIP_SNMP" description="Enable SNMP protocol" default="false" />
 // #define RT_LWIP_SNMP
 // <bool name="RT_LWIP_DHCP" description="Enable DHCP client to get IP address" default="false" />
 // #define RT_LWIP_DHCP
 // <integer name="RT_LWIP_TCPTHREAD_PRIORITY" description="the thread priority of TCP thread" default="128" />
-#define RT_LWIP_TCPTHREAD_PRIORITY	12
+//#define RT_LWIP_TCPTHREAD_PRIORITY	12
 // <integer name="RT_LWIP_TCPTHREAD_MBOX_SIZE" description="the mail box size of TCP thread to wait for" default="32" />
-#define RT_LWIP_TCPTHREAD_MBOX_SIZE	8
+//#define RT_LWIP_TCPTHREAD_MBOX_SIZE	8
 // <integer name="RT_LWIP_TCPTHREAD_STACKSIZE" description="the thread stack size of TCP thread" default="4096" />
-#define RT_LWIP_TCPTHREAD_STACKSIZE	4096
+//#define RT_LWIP_TCPTHREAD_STACKSIZE	4096
 // <integer name="RT_LWIP_ETHTHREAD_PRIORITY" description="the thread priority of ethnetif thread" default="144" />
-#define RT_LWIP_ETHTHREAD_PRIORITY	14
+//#define RT_LWIP_ETHTHREAD_PRIORITY	14
 // <integer name="RT_LWIP_ETHTHREAD_MBOX_SIZE" description="the mail box size of ethnetif thread to wait for" default="8" />
-#define RT_LWIP_ETHTHREAD_MBOX_SIZE	8
+//#define RT_LWIP_ETHTHREAD_MBOX_SIZE	8
 // <integer name="RT_LWIP_ETHTHREAD_STACKSIZE" description="the stack size of ethnetif thread" default="512" />
-#define RT_LWIP_ETHTHREAD_STACKSIZE	512
+//#define RT_LWIP_ETHTHREAD_STACKSIZE	512
 // <ipaddr name="RT_LWIP_IPADDR" description="IP address of device" default="192.168.1.30" />
-#define RT_LWIP_IPADDR "192.168.1.30"
+//#define RT_LWIP_IPADDR "192.168.1.30"
 // <ipaddr name="RT_LWIP_GWADDR" description="Gateway address of device" default="192.168.1.1" />
-#define RT_LWIP_GWADDR  "192.168.1.1"
+//#define RT_LWIP_GWADDR  "192.168.1.1"
 // <ipaddr name="RT_LWIP_MSKADDR" description="Mask address of device" default="255.255.255.0" />
-#define RT_LWIP_MSKADDR  "255.255.255.0"
+//#define RT_LWIP_MSKADDR  "255.255.255.0"
 // </section>
 
 // <bool name="RT_USING_CMSIS_OS" description="Using CMSIS OS API" default="true" />
