@@ -6,7 +6,7 @@
 /* Program Entry, set to mark it as "used" and avoid gc */
 MEMORY
 {
-    CODE (rx) : ORIGIN = 0x00000000, LENGTH = 0x00080000
+    CODE (rx) : ORIGIN = 0x00010000, LENGTH = 0x00080000
     DATA (rw) : ORIGIN = 0x10000000, LENGTH = 0x00008000
 }
 ENTRY(Reset_Handler)
